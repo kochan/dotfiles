@@ -156,7 +156,7 @@ if [ `uname -s` == "Darwin" ]; then
     exit 1
   fi
   brew_install ruby git zsh tig tmux
-  sym_link bash_profile bashrc vimrc zshrc
+  sym_link bash_profile bashrc vimrc zshrc gitignore
   sym_link_mac tmux.conf
   vundle_conf
   zsh_conf
@@ -174,7 +174,7 @@ if [ `uname -s` == "Linux" ]; then
     exit 1
   fi
   apt_install ruby git zsh tig tmux
-  sym_link bash_profile bashrc vimrc zshrc
+  sym_link bash_profile bashrc vimrc zshrc gitignore
   sym_link_linux tmux.conf
   vundle_conf
   zsh_conf
