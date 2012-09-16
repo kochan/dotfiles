@@ -146,7 +146,7 @@ sym_link_ubuntu() {
 }
 
 ## MacOSX
-if [ `uname -s` == "Darwin" ]; then
+if [ `uname -s` = "Darwin" ]; then
   echo "Operation System: `uname -s`"
   echo ""
   echo "Checking required applications: [brew]"
@@ -155,7 +155,7 @@ if [ `uname -s` == "Darwin" ]; then
     echo "exit 1" 1>&2
     exit 1
   fi
-  brew_install ruby git zsh tig tmux
+  brew_install ruby curl git zsh tig ctags tmux
   sym_link bash_profile bashrc vimrc zshrc gitignore
   sym_link_mac tmux.conf
   vundle_conf
@@ -164,7 +164,7 @@ if [ `uname -s` == "Darwin" ]; then
 fi
 
 ## Ubuntu
-if [ `uname -s` == "Linux" ]; then
+if [ `uname -s` = "Linux" ]; then
   echo "Operation System: `uname -s`"
   echo ""
   echo "Checking required applications: [apt-get]"
@@ -173,7 +173,7 @@ if [ `uname -s` == "Linux" ]; then
     echo "exit 1" 1>&2
     exit 1
   fi
-  apt_install ruby git zsh tig tmux
+  apt_install ruby curl git zsh tig ctags tmux
   sym_link bash_profile bashrc vimrc zshrc gitignore
   sym_link_linux tmux.conf
   vundle_conf
