@@ -159,8 +159,8 @@ if [ `uname -s` = "Darwin" ]; then
   sym_link bash_profile bashrc vimrc zshrc gitignore
   sym_link_mac tmux.conf
   vundle_conf
-  zsh_conf
   git_conf
+  zsh_conf
 fi
 
 ## Ubuntu
@@ -177,7 +177,7 @@ if [ `uname -s` = "Linux" ]; then
   sym_link bash_profile bashrc vimrc zshrc gitignore
   sym_link_linux tmux.conf
   vundle_conf
-  zsh_conf
   git_conf
+  zsh_conf
 fi
 
