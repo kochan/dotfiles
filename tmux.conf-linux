@@ -3,11 +3,31 @@ unbind-key C-b
 set-option -g prefix C-j
 bind-key C-j send-prefix
 
-## Quick Pane Cycling
+## Quick Window/Pane Cycling
 #unbind ^j
 #bind ^j select-pane -t :.+
 unbind ^j
 bind ^j next-window
+#unbind ^N
+#bind ^N next-window
+unbind ^N
+bind ^N select-pane -t :.+
+#unbind n
+#bind n next-window
+unbind n
+bind n select-pane -t :.+
+
+## Next ^@ ^N sp n
+unbind ^@
+bind ^@ next-window
+unbind " "
+bind " " next-window
+
+## Moving Pane as Vi Keybind
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
 
 ## Color
 set -g default-terminal "screen-256color"
@@ -48,24 +68,6 @@ bind c new-window -n zsh
 ## Detach
 unbind ^D
 bind ^D detach
-
-## Next ^@ ^N sp n
-unbind ^@
-bind ^@ next-window
-unbind ^N
-bind ^N next-window
-unbind " "
-bind " " next-window
-#unbind n
-#bind n next-window
-unbind n
-bind n select-pane -t :.+
-
-## Move Pane
-bind h select-pane -L
-bind j select-pane -D
-bind k select-pane -U
-bind l select-pane -R
 
 ## title A
 unbind A
