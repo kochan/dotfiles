@@ -4,7 +4,6 @@
 .#*
 .*~
 *~
-.DS_Store
 *.sw[po]
 tags
 TAGS
@@ -21,3 +20,18 @@ samples
 .vim/bundle/
 .vim/.netrwhist
 .vimrc_sample
+
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
