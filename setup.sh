@@ -92,6 +92,7 @@ git_conf() {
         echo "Please answer yes or no.";;
     esac
   done
+  echo ""
 }
 
 ## func for MacOSX
