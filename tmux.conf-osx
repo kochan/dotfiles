@@ -4,10 +4,28 @@ set-option -g prefix C-j
 bind-key C-j send-prefix
 
 ## Quick Pane Cycling
-#unbind ^j
-#bind ^j select-pane -t :.+
 unbind ^j
-bind ^j next-window
+bind ^j select-pane -t :.+
+#unbind ^j
+#bind ^j next-window
+
+## Next ^@ ^N sp n
+unbind ^@
+bind ^@ next-window
+unbind ^N
+bind ^N next-window
+unbind " "
+bind " " next-window
+unbind n
+bind n next-window
+#unbind n
+#bind n select-pane -t :.+
+
+## Move Pane
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
 
 ## Copy and Paste for MacOSX
 set-option -g default-command "reattach-to-user-namespace -l zsh"
@@ -54,24 +72,6 @@ bind c new-window -n zsh
 ## Detach
 unbind ^D
 bind ^D detach
-
-## Next ^@ ^N sp n
-unbind ^@
-bind ^@ next-window
-unbind ^N
-bind ^N next-window
-unbind " "
-bind " " next-window
-#unbind n
-#bind n next-window
-unbind n
-bind n select-pane -t :.+
-
-## Move Pane
-bind h select-pane -L
-bind j select-pane -D
-bind k select-pane -U
-bind l select-pane -R
 
 ## title A
 unbind A
