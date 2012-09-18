@@ -34,10 +34,10 @@ set incsearch  " インクリメンタルサーチ
 set hlsearch   " 検索文字をハイライト
 
 " Indent
-set autoindent
+"set autoindent
 "set paste
-set smartindent
-set cindent
+"set smartindent
+"set cindent
 
 " Tab
 set expandtab
@@ -93,16 +93,16 @@ Bundle 'kana/vim-textobj-fold'
 Bundle 'kana/vim-textobj-indent'
 Bundle 'kana/vim-textobj-lastpat'
 
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/vimfiler'
+"Bundle 'Shougo/neocomplcache'
+"Bundle 'Shougo/vimfiler'
 
 Bundle 'h1mesuke/vim-alignta'
 
-Bundle 'Shougo/unite.vim'
-Bundle 'tsukkee/unite-help'
-Bundle 'h1mesuke/unite-outline'
-Bundle 'basyura/unite-rails'
-Bundle 'tsukkee/unite-tag'
+"Bundle 'Shougo/unite.vim'
+"Bundle 'tsukkee/unite-help'
+"Bundle 'h1mesuke/unite-outline'
+"Bundle 'basyura/unite-rails'
+"Bundle 'tsukkee/unite-tag'
 
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
