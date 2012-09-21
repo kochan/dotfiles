@@ -129,7 +129,7 @@ apt_install() {
     if ! type $1; then
       echo "Cannot find $1 in \$PATH" 1>&2
       echo "Installing [apt-get install $1]"
-      apt-get install $1
+      sudo apt-get install $1
     fi
     shift 1
   done
