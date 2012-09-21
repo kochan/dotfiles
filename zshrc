@@ -40,9 +40,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/
 set -o vi
 
 # EDITOR
-#export EDITOR=/usr/local/bin/mvim
-#alias vi='env LANG=ja_JP.UTF-8 /usr/local/bin/mvim "$@"'
-#alias vim='env LANG=ja_JP.UTF-8 /usr/local/bin/mvim "$@"'
+export EDITOR=vi
 
 # Alias
 alias ls='ls -F'
