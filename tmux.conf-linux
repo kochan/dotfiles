@@ -3,27 +3,25 @@ unbind-key C-b
 set-option -g prefix C-j
 bind-key C-j send-prefix
 
-## Quick Window/Pane Cycling
-#unbind ^j
-#bind ^j select-pane -t :.+
+## Quick Pane Cycling
 unbind ^j
-bind ^j next-window
-#unbind ^N
-#bind ^N next-window
-unbind ^N
-bind ^N select-pane -t :.+
-#unbind n
-#bind n next-window
-unbind n
-bind n select-pane -t :.+
+bind ^j select-pane -t :.+
+#unbind ^j
+#bind ^j next-window
 
 ## Next ^@ ^N sp n
 unbind ^@
 bind ^@ next-window
+unbind ^N
+bind ^N next-window
 unbind " "
 bind " " next-window
+unbind n
+bind n next-window
+#unbind n
+#bind n select-pane -t :.+
 
-## Moving Pane as Vi Keybind
+## Move Pane
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U

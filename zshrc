@@ -34,15 +34,13 @@ plugins=(git ruby gem knife brew github perl python)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/Cellar/ruby/1.9.3-p194/bin
 
 # VI mode
 set -o vi
 
 # EDITOR
-#export EDITOR=/usr/local/bin/mvim
-#alias vi='env LANG=ja_JP.UTF-8 /usr/local/bin/mvim "$@"'
-#alias vim='env LANG=ja_JP.UTF-8 /usr/local/bin/mvim "$@"'
+export EDITOR=vi
 
 # Alias
 alias ls='ls -F'
@@ -57,5 +55,3 @@ export EDITOR=vi
 if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
   tmux attach || tmux new; exit
 fi
-
-

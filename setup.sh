@@ -129,7 +129,7 @@ apt_install() {
     if ! type $1; then
       echo "Cannot find $1 in \$PATH" 1>&2
       echo "Installing [apt-get install $1]"
-      apt-get install $1
+      sudo apt-get install $1
     fi
     shift 1
   done
@@ -156,7 +156,7 @@ if [ `uname -s` = "Darwin" ]; then
     echo "exit 1" 1>&2
     exit 1
   fi
-  brew_install ruby curl git zsh tig ctags tmux
+  brew_install ruby vim curl git zsh tig ctags tmux
   sym_link bash_profile bashrc vimrc zshrc gitignore
   sym_link_mac tmux.conf
   vundle_conf
@@ -174,7 +174,7 @@ if [ `uname -s` = "Linux" ]; then
     echo "exit 1" 1>&2
     exit 1
   fi
-  apt_install ruby curl git zsh tig ctags tmux
+  apt_install ruby vim curl git zsh tig ctags tmux
   sym_link bash_profile bashrc vimrc zshrc gitignore
   sym_link_linux tmux.conf
   vundle_conf
