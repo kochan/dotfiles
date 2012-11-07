@@ -83,6 +83,10 @@ bind -r ^"[" copy-mode
 unbind ^]
 bind -r ^] paste-buffer
 
+## next-layout
+unbind Space
+bind Space next-layout
+
 ## other ^A
 unbind ^A
 bind ^A last-window
