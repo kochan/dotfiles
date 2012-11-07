@@ -122,17 +122,12 @@ Bundle "L9"
 Bundle "FuzzyFinder"
 
 
-<<<<<<< HEAD
-"Bundle 'Shougo/neocomplcache'
-"Bundle 'Shougo/vimfiler'
-=======
 "Bundle 'git-commit'
 "Bundle 'vimwiki'
 "Bundle 'Rename'
 "Bundle 'jade.vim'
 "Bundle 'taglist.vim'
 "Bundle 'scrooloose/syntastic'
->>>>>>> ccccaa907182f9c0c997a56f59e15e0d68f1601c
 
 "Bundle 'Shougo/neocomplcache'
 "Bundle 'Shougo/vimfiler'
