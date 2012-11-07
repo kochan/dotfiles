@@ -50,7 +50,8 @@ set lazyredraw
 set magic
 
 " Escの2回押しでハイライト消去
-nmap <ESC><ESC> ;nohlsearch<CR><ESC>
+"nmap <ESC><ESC> ;nohlsearch<CR><ESC>
+nnoremap <CR> :noh<CR><CR>
 
 " Status Line
 set laststatus=2 " 常にステータスラインを表示
@@ -93,16 +94,16 @@ Bundle 'kana/vim-textobj-fold'
 Bundle 'kana/vim-textobj-indent'
 Bundle 'kana/vim-textobj-lastpat'
 
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/vimfiler'
+"Bundle 'Shougo/neocomplcache'
+"Bundle 'Shougo/vimfiler'
 
 Bundle 'h1mesuke/vim-alignta'
 
-Bundle 'Shougo/unite.vim'
-Bundle 'tsukkee/unite-help'
-Bundle 'h1mesuke/unite-outline'
-Bundle 'basyura/unite-rails'
-Bundle 'tsukkee/unite-tag'
+"Bundle 'Shougo/unite.vim'
+"Bundle 'tsukkee/unite-help'
+"Bundle 'h1mesuke/unite-outline'
+"Bundle 'basyura/unite-rails'
+"Bundle 'tsukkee/unite-tag'
 
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
@@ -144,3 +145,11 @@ let file_name = expand("%")
 if has('vim_starting') &&  file_name == ""
   autocmd VimEnter * NERDTree ./
 endif
+
+:command NE NERDTree
+
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-n> :tabnew<CR>
+map <S-l> :wincmd l<CR>
+map <S-h> :wincmd h<CR>
